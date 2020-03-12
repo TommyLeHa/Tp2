@@ -29,9 +29,9 @@
     background-color: rgb(40, 105, 161);
     color:white;
 }
-.site-header{
+/*.site-header{
 	display: none;
-}
+}*/
 .entry-footer{
 	display: none;
 }
@@ -67,4 +67,7 @@
 		min-width: 150px;
 		min-height: 150px;
 	}
+}
+.menu-toggle{
+	display:none;
 }
