@@ -29,7 +29,7 @@ get_header();
 		
 
 		endwhile; // End of the loop.
-        echo '<h1>Voici les trois dernières nouvelles</h1>';
+        echo '<h1 class="SousTitre">Voici les trois dernières nouvelles</h1>';
         echo '<div class= "conteneurGlobalImage">';
          // The Query
         $args = array(
@@ -56,7 +56,7 @@ get_header();
  */
 wp_reset_postdata();
  
-echo '<h1>Nos événements</h1>';
+echo '<h1 class="SousTitre">Nos événements</h1>';
 /* The 2nd Query (without global var) */
 $args2 = array(
 

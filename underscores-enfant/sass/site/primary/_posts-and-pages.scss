@@ -32,13 +32,8 @@
 /*.site-header{
 	display: none;
 }*/
-.entry-footer{
-	display: none;
-}
-.entry-title{
-	text-align: center;
-	color: greenyellow;
-}
+
+
 .conteneurGlobal{
 	display: flex;
 	flex-direction: row;
@@ -70,4 +65,8 @@
 }
 .menu-toggle{
 	display:none;
+}
+.Titre{
+	padding: 50px;
+	color: rgb(172, 38, 38);
 }

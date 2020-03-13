@@ -24,6 +24,37 @@ body {
 # Variables
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+# Entête
+--------------------------------------------------------------*/
+.site-branding {
+  display: none;
+}
+
+.main-navigation {
+  display: none;
+}
+
+.entry-title {
+  text-align: center;
+  color: greenyellow;
+}
+
+.SousTitre {
+  color: #f38c63;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.entry-footer {
+  display: none;
+}
+
+.site-info {
+  display: none;
+}
+
+/*--------------------------------------------------------------
 # mixin
 --------------------------------------------------------------*/
 /* ----------------------------------------- */
@@ -590,15 +621,6 @@ l'état checked est testé par un le sélecteur suivant:
 /*.site-header{
 	display: none;
 }*/
-.entry-footer {
-  display: none;
-}
-
-.entry-title {
-  text-align: center;
-  color: greenyellow;
-}
-
 .conteneurGlobal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -643,5 +665,10 @@ l'état checked est testé par un le sélecteur suivant:
 
 .menu-toggle {
   display: none;
+}
+
+.Titre {
+  padding: 50px;
+  color: #ac2626;
 }
 /*# sourceMappingURL=style.css.map */
