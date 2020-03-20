@@ -1,0 +1,49 @@
+.rayures{
+    @include rayure-bleu;
+  }
+ 
+.post-thumbnail{
+    animation-name: animImg;
+    animation-duration: 5s;
+}  
+  .animbloc2{
+    animation-name: animbloc2;
+    animation-duration: 8s;
+  }
+
+.entry-title{
+    animation-name: animTitre;
+    animation-duration: 5s;
+}
+  @keyframes animTitre{
+      0%{
+          
+        color: rgb(19, 173, 52); 
+      }
+      100%{
+          
+        color: greenyellow;
+      }
+  }
+
+  @keyframes animImg{
+      0%{
+          opacity: 0%;
+      }
+      100%{
+          opacity: 100%;
+      }
+  }
+  
+  @keyframes animbloc2{
+    0%{
+      transform: translateX(-1500px);
+    }
+    50%{
+      transform: translateX(300px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
+

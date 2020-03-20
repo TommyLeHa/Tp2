@@ -44,19 +44,9 @@ body {
 }
 
 /*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-.entry-footer {
-  display: none;
-}
-
-.site-info {
-  display: none;
-}
-
-/*--------------------------------------------------------------
 # mixin
 --------------------------------------------------------------*/
+/*Mixin rayures*/
 /* ----------------------------------------- */
 /* ------  Un premier exemple de mixin ----- */
 /* ----------------------------------------- */
@@ -263,6 +253,113 @@ Voici un exemple
 }
 
 */
+/*--------------------------------------------------------------
+# Animation
+--------------------------------------------------------------*/
+.rayures {
+  background: repeating-linear-gradient(-45deg, #609de2, #4b9bc0 20px, #136392 20px, #1a4aa5 40px);
+  color: white;
+}
+
+.post-thumbnail {
+  -webkit-animation-name: animImg;
+          animation-name: animImg;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.animbloc2 {
+  -webkit-animation-name: animbloc2;
+          animation-name: animbloc2;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+.entry-title {
+  -webkit-animation-name: animTitre;
+          animation-name: animTitre;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+@-webkit-keyframes animTitre {
+  0% {
+    color: #13ad34;
+  }
+  100% {
+    color: greenyellow;
+  }
+}
+
+@keyframes animTitre {
+  0% {
+    color: #13ad34;
+  }
+  100% {
+    color: greenyellow;
+  }
+}
+
+@-webkit-keyframes animImg {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes animImg {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes animbloc2 {
+  0% {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+  }
+  50% {
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes animbloc2 {
+  0% {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+  }
+  50% {
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+/*--------------------------------------------------------------
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.entry-footer {
+  display: none;
+}
+
+.site-info {
+  display: none;
+}
+
 /*--------------------------------------------------------------
 # extend
 --------------------------------------------------------------*/
