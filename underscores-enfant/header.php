@@ -29,16 +29,16 @@
             <input id="checkMenu" type="checkbox">
             <label id="btnMenu" for="checkMenu">&#9776;</label>
             <ul class='global'>
-                <li><a href="https://www.nhl.com/fr">1</a></li>
-                <li><a href="https://www.espn.com/nhl/">2</a></li>
-                <li><a href="https://www.rds.ca/hockey/lnh">3</a></li>
-                <li><a href="https://www.tsn.ca/nhl">4</a></li>
-				<li><a href="https://www.nbcsports.com/nhl">5</a></li>
-				<li><a href="#">6</a></li>
-				<li><a href="#">7</a></li>
-				<li><a href="#">8</a></li>
-				<li><a href="#">9</a></li>
-				<li><a href="#">10</a></li>
+                <li><a href="https://www.nhl.com/fr" target="_blank">1</a></li>
+                <li><a href="https://www.espn.com/nhl/" target="_blank">2</a></li>
+                <li><a href="https://www.rds.ca/hockey/lnh" target="_blank">3</a></li>
+                <li><a href="https://www.tsn.ca/nhl" target="_blank">4</a></li>
+				<li><a href="https://www.nbcsports.com/nhl" target="_blank">5</a></li>
+				<li><a href="https://www.linkedin.com/in/tommy-leha/" target="_blank">6</a></li>
+				<li><a href="https://lehatommypro.wixsite.com/portfolio" target="_blank">7</a></li>
+				<li><a href="https://www.instagram.com/tommyleha/?hl=fr-ca" target="_blank">8</a></li>
+				<li><a href="https://www.facebook.com/tommy.leha" target="_blank">9</a></li>
+				<li><a href="https://theaudl.com/" target="_blank">10</a></li>
                 
 
             </ul>
