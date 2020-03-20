@@ -27,8 +27,9 @@ get_header();
 			endif;
 
 		endwhile; // End of the loop.
+		
 		?>
-
+        
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

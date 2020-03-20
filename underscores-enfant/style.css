@@ -48,6 +48,7 @@ body {
 # mixin
 --------------------------------------------------------------*/
 /*Mixin rayures*/
+/*
 /* ----------------------------------------- */
 /* ------  Un premier exemple de mixin ----- */
 /* ----------------------------------------- */
@@ -255,6 +256,82 @@ Voici un exemple
 
 */
 /*--------------------------------------------------------------
+# extend
+--------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------ */
+/* @extend  
+/* ------------------------------------------------------------------------------ */
+/* Un  @extend permet d'hériter des propriétés CSS d'un autre sélecteur           */
+/* ------------------------------------------------------------------------------ */
+/*
+.small-uppercase{
+    color: lightslategrey;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    line-height: 12px;
+    text-transform: uppercase;
+  }
+  
+  .modal-background{
+    @extend .small-uppercase;
+  }
+  
+  .product-link{
+    @extend .small-uppercase;
+  }
+  
+  .image-pattern{
+    @extend .small-uppercase;
+  }
+  */
+/*
+  .small-uppercase,
+  .modal-background,
+  .product-link,
+  .image-pattern{
+    color: lightslategrey;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    line-height: 12px;
+    text-transform: uppercase;
+  }
+  */
+/* ---------------------------------------------------------------------------- */
+/* Différence avec les mixins                                                   */
+/* ---------------------------------------------------------------------------- */
+/* 
+Il y a 2 différences:
+La règle @extend n'a pas de paramètres. Les mixins en ont.
+La règle @extend combine des sélecteurs. Les mixins non.
+*/
+/*
+La liste des propriétés est simplement répétée autant de fois que le 
+@include small-uppercase () est appelé.
+
+Un  @extend est plus efficace, car il n'écrit les propriétés 
+communes qu'une seule fois.
+On peut optimiser @extend avec un «placeholder»
+en précédent notre extension avec «%»
+*/
+.modal-background, .Titre, .product-link, .image-pattern {
+  color: lightslategrey;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.modal-background,
+.product-link,
+.image-pattern {
+  color: lightslategrey;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------
 # Animation
 --------------------------------------------------------------*/
 .rayures {
@@ -375,7 +452,6 @@ Voici un exemple
 }
 
 /*--------------------------------------------------------------
-/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .entry-footer {
@@ -384,82 +460,6 @@ Voici un exemple
 
 .site-info {
   display: none;
-}
-
-/*--------------------------------------------------------------
-# extend
---------------------------------------------------------------*/
-/* ------------------------------------------------------------------------------ */
-/* @extend  
-/* ------------------------------------------------------------------------------ */
-/* Un  @extend permet d'hériter des propriétés CSS d'un autre sélecteur           */
-/* ------------------------------------------------------------------------------ */
-/*
-.small-uppercase{
-    color: lightslategrey;
-    font-size: 10px;
-    letter-spacing: 0.1em;
-    line-height: 12px;
-    text-transform: uppercase;
-  }
-  
-  .modal-background{
-    @extend .small-uppercase;
-  }
-  
-  .product-link{
-    @extend .small-uppercase;
-  }
-  
-  .image-pattern{
-    @extend .small-uppercase;
-  }
-  */
-/*
-  .small-uppercase,
-  .modal-background,
-  .product-link,
-  .image-pattern{
-    color: lightslategrey;
-    font-size: 10px;
-    letter-spacing: 0.1em;
-    line-height: 12px;
-    text-transform: uppercase;
-  }
-  */
-/* ---------------------------------------------------------------------------- */
-/* Différence avec les mixins                                                   */
-/* ---------------------------------------------------------------------------- */
-/* 
-Il y a 2 différences:
-La règle @extend n'a pas de paramètres. Les mixins en ont.
-La règle @extend combine des sélecteurs. Les mixins non.
-*/
-/*
-La liste des propriétés est simplement répétée autant de fois que le 
-@include small-uppercase () est appelé.
-
-Un  @extend est plus efficace, car il n'écrit les propriétés 
-communes qu'une seule fois.
-On peut optimiser @extend avec un «placeholder»
-en précédent notre extension avec «%»
-*/
-.modal-background, .product-link, .image-pattern {
-  color: lightslategrey;
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  line-height: 12px;
-  text-transform: uppercase;
-}
-
-.modal-background,
-.product-link,
-.image-pattern {
-  color: lightslategrey;
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  line-height: 12px;
-  text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------

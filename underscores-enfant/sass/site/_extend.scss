@@ -66,7 +66,9 @@ en précédent notre extension avec «%»
   .modal-background{
     @extend %small-uppercase;
   }
-  
+  .Titre{
+    @extend %small-uppercase;
+  }
   .product-link{
     @extend %small-uppercase;
   }
