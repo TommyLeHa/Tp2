@@ -41,6 +41,7 @@ body {
 
 .SousTitre {
   color: #f38c63;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -280,6 +281,31 @@ Voici un exemple
           animation-name: animTitre;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
+}
+
+.SousTitre {
+  -webkit-animation-name: animSousTitre;
+          animation-name: animSousTitre;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+@-webkit-keyframes animSousTitre {
+  0% {
+    color: #f14f0e;
+  }
+  100% {
+    color: #f38c63;
+  }
+}
+
+@keyframes animSousTitre {
+  0% {
+    color: #f14f0e;
+  }
+  100% {
+    color: #f38c63;
+  }
 }
 
 @-webkit-keyframes animTitre {

@@ -15,6 +15,22 @@
     animation-name: animTitre;
     animation-duration: 5s;
 }
+.SousTitre{
+    animation-name: animSousTitre;
+    animation-duration:5s;
+}
+
+@keyframes animSousTitre{
+    0%{
+      
+        color: rgb(241, 79, 14);
+    }
+    100%{
+    
+        color: rgb(243, 140, 99);
+    }
+}
+
   @keyframes animTitre{
       0%{
           
