@@ -671,4 +671,28 @@ l'état checked est testé par un le sélecteur suivant:
   padding: 50px;
   color: #ac2626;
 }
+
+.site-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  border: 2px solid;
+  border-color: #f59a5d;
+  margin: 20px;
+}
+
+.grid {
+  border: 2px solid;
+  border-color: #f59a5d;
+  padding: 10px;
+  margin: 10px;
+}
+
+.titre-evenement {
+  text-align: center;
+  color: #fa7b40;
+}
 /*# sourceMappingURL=style.css.map */
