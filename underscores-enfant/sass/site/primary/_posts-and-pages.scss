@@ -70,3 +70,21 @@
 	padding: 50px;
 	color: rgb(172, 38, 38);
 }
+.site-main{
+	display: grid; 
+	grid-template-columns:repeat(3,1fr); 
+	grid-template-rows:repeat(1, 1fr); 
+	border:2px solid ;
+	border-color: rgb(245, 154, 93);
+	margin: 20px;
+}
+.grid{
+	border:2px solid ;
+	border-color: rgb(245, 154, 93);
+	padding: 10px;
+	margin: 10px;
+}
+.titre-evenement{
+	text-align: center;
+	color: rgb(250, 123, 64);
+}
