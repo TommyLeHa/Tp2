@@ -38,7 +38,7 @@
 				<li><a href="https://lehatommypro.wixsite.com/portfolio" target="_blank">7</a></li>
 				<li><a href="https://www.instagram.com/tommyleha/?hl=fr-ca" target="_blank">8</a></li>
 				<li><a href="https://www.facebook.com/tommy.leha" target="_blank">9</a></li>
-				<li><a href="https://theaudl.com/" target="_blank">10</a></li>
+				<li><a href="http://localhost/tommy-tp2/category/evenement/" target="_blank">Grid</a></li>
                 
 
             </ul>

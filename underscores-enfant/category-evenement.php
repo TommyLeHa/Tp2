@@ -3,7 +3,7 @@ get_header();
 ?>
 <div id="primary" class="content-area">
     <h1 class ="titre-evenement"> Nos événements importants cette année </h1>
-    <main id="main" class ="site-main">
+    <main id="main" class ="site-grid">
 
 <?php
 

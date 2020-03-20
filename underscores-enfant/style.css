@@ -672,7 +672,7 @@ l'état checked est testé par un le sélecteur suivant:
   color: #ac2626;
 }
 
-.site-main {
+.site-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
